@@ -1,623 +1,422 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OUR SERVICES</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="Css/styles.css" />
-  </head>
-  <body>
-    <nav class="bg-blue-900 text-white p-4 shadow-lg w-full">
-      <div class="container mx-auto flex justify-between items-center">
-        <a href="index.html" class="flex items-center space-x-2">
-          <img
-            src="Assets/IWACU_HOMECARE_LOGO-removebg-preview.png"
-            alt="Iwacu Home Care Logo"
-            class="h-32 w-auto rounded-full object-cover"
-          />
-        </a>
 
-        <ul class="hidden md:flex space-x-12 items-center">
-          <li>
-            <a
-              href="index.html"
-              class="nav-link font-semibold hover:text-[#C49E35] transition-colors duration-200"
-              >Home</a
-            >
-          </li>
-          <li class="group relative">
-            <a
-              href="Iwacudifference.html"
-              class="nav-link font-semibold hover:text-[#C49E35] transition-colors duration-200 flex items-center"
-            >
-              Iwacu Difference
-              <svg
-                class="ml-1 w-4 h-4 transform group-hover:rotate-180 transition-transform duration-200"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"
-                ></path>
-              </svg>
-            </a>
-            <ul
-              class="absolute hidden group-hover:block top-full left-0 bg-white shadow-lg min-w-[160px] z-50 rounded-lg overflow-hidden"
-            >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OUR SERVICES</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="Css/styles.css" />
+</head>
+
+<body>
+  <nav class="bg-blue-900 text-white p-4 shadow-lg w-full">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="index.html" class="flex items-center space-x-2">
+        <img src="Assets/IWACU_HOMECARE_LOGO-removebg-preview.png" alt="Iwacu Home Care Logo"
+          class="h-32 w-auto rounded-full object-cover" />
+      </a>
+
+      <ul class="hidden md:flex space-x-12 items-center">
+        <li>
+          <a href="index.html"
+            class="nav-link font-semibold hover:text-[#C49E35] transition-colors duration-200">Home</a>
+        </li>
+        <li class="group relative">
+          <a href="Iwacudifference.html"
+            class="nav-link font-semibold hover:text-[#C49E35] transition-colors duration-200 flex items-center">
+            Iwacu Difference
+            <svg class="ml-1 w-4 h-4 transform group-hover:rotate-180 transition-transform duration-200" fill="none"
+              stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </a>
+          <ul
+            class="absolute hidden group-hover:block top-full left-0 bg-white shadow-lg min-w-[160px] z-50 rounded-lg overflow-hidden">
+            <li>
+              <a href="Team.html" class="block px-4 py-3 text-gray-800 whitespace-nowrap hover:bg-gray-100">Our Team</a>
+            </li>
+          </ul>
+        </li>
+        <li class="group relative">
+          <a href="Services.html"
+            class="nav-link font-semibold hover:text-[#C49E35] transition-colors duration-200 flex items-center">
+            Our Services
+            <svg class="ml-1 w-4 h-4 transform group-hover:rotate-180 transition-transform duration-200" fill="none"
+              stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </a>
+          <ul
+            class="absolute hidden group-hover:block top-full left-0 bg-white shadow-lg min-w-[160px] z-50 rounded-lg overflow-hidden">
+            <li>
+              <a href="Homecare.html" class="block px-4 py-3 text-gray-800 whitespace-nowrap hover:bg-gray-100">Home
+                Care</a>
+            </li>
+            <li>
+              <a href="Nursing.html" class="block px-4 py-3 text-gray-800 whitespace-nowrap hover:bg-gray-100">Nursing
+                Home</a>
+            </li>
+            <li>
+              <a href="Transitional.html"
+                class="block px-4 py-3 text-gray-800 whitespace-nowrap hover:bg-gray-100">Transitional Health</a>
+            </li>
+            <li>
+              <a href="Retirement.html"
+                class="block px-4 py-3 text-gray-800 whitespace-nowrap hover:bg-gray-100">Retirement Living</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="Contact.html"
+            class="nav-link font-semibold hover:text-[#C49E35] transition-colors duration-200">Contact Us</a>
+        </li>
+      </ul>
+
+      <a href="Contact.html"
+        class="hidden md:block bg-[#C49E35] text-white font-semibold py-2 px-6 rounded-full hover:bg-white hover:text-blue-900 transition-colors duration-200 shadow-md">
+        Get In Touch
+      </a>
+
+      <div class="md:hidden">
+        <button id="mobile-menu-toggle" class="focus:outline-none hamburger-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <!-- Mobile Menu Overlay -->
+  <div id="mobile-menu-overlay" class="mobile-menu-overlay"></div>
+
+  <!-- Mobile Menu Sidebar -->
+  <div id="mobile-menu" class="mobile-menu">
+    <button class="close-btn" id="mobile-menu-close">&times;</button>
+    <ul class="flex flex-col">
+      <li><a href="index.html">Home</a></li>
+      <li class="relative">
+        <a href="Iwacudifference.html" class="mobile-dropdown-toggle" data-target="mobile-dropdown-1">
+          Iwacu Difference
+          <svg class="mobile-dropdown-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+        </a>
+        <ul id="mobile-dropdown-1" class="mobile-dropdown-content">
+          <li><a href="Team.html">Our Team</a></li>
+        </ul>
+      </li>
+      <li class="relative">
+        <a href="Services.html" class="mobile-dropdown-toggle" data-target="mobile-dropdown-2">
+          Our Services
+          <svg class="mobile-dropdown-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+        </a>
+        <ul id="mobile-dropdown-2" class="mobile-dropdown-content">
+          <li><a href="Homecare.html">Home Care</a></li>
+          <li><a href="Nursing.html">Nursing Home</a></li>
+          <li><a href="Transitional.html">Transitional Health</a></li>
+          <li><a href="Retirement.html">Retirement Living</a></li>
+        </ul>
+      </li>
+      <li><a href="Contact.html">Contact Us</a></li>
+    </ul>
+    <a href="#" class="mobile-button">Get In Touch</a>
+  </div>
+
+  <!-- Hero Section -->
+
+  <section class="relative h-screen bg-cover bg-center bg-no-repeat flex items-center px-4 md:px-20"
+    style="background-image: url('Assets/Hero.jpg')">
+    <div class="relative max-w-xl z-10 text-[#324998]">
+      <h1 class="text-4xl md:text-5xl font-semibold mb-6 leading-tight">
+        Our Continuum of<br />
+        Services
+      </h1>
+      <p class="text-lg md:text-xl leading-relaxed mb-8 text-gray-800">
+        Iwacu Dignity Home Care offers exceptional<br />
+        home care services designed to enhance well-being,<br />
+        foster independence, and ensure the highest level <br />
+        of satisfaction clients and their families.
+      </p>
+    </div>
+  </section>
+
+  <section class="bg-white py-16 md:py-24">
+    <div class="container mx-auto px-4">
+      <!-- Introductory Paragraph -->
+      <div class="max-w-4xl mx-auto bg-gray-100 p-8 rounded-lg shadow-md mb-16">
+        <p class="text-gray-700 text-lg md:text-xl leading-relaxed text-center">
+          Are you struggling to find reliable, compassionate care for your
+          loved ones? Do you worry about their health, safety, and emotional
+          well-being while juggling your own responsibilities? At Iwacu
+          Dignity Home Care, we understand the pain of not being able to be
+          there for those who need you the most. That's why we're here—to
+          provide the expert care and genuine compassion your family deserves.
+          Our wide range of services is designed to meet every need with
+          dignity, professionalism, and a personal touch, so you can find
+          peace of mind knowing your loved ones are in the best hands.
+        </p>
+      </div>
+
+      <!-- Transitional Health Section -->
+      <div class="bg-gray-100 py-4 md:py-6 px-8 md:px-12 rounded-lg shadow-md mb-16 md:mb-24">
+        <div class="flex flex-col lg:flex-row items-center lg:items-start gap-8">
+          <!-- Left Column: Image -->
+          <div class="w-full lg:w-1/2 flex justify-center items-center">
+            <img src="Assets/8_edited.jpg" alt="Transitional Health"
+              class="rounded-lg shadow-xl w-full h-auto object-cover" />
+          </div>
+
+          <!-- Right Column: Transitional Health Content -->
+          <div class="w-full lg:w-1/2 text-left flex flex-col justify-center">
+            <h3 class="text-blue-900 text-3xl md:text-4xl font-extrabold mb-6">
+              Transitional Health
+            </h3>
+            <ul class="list-disc list-inside text-gray-700 text-lg md:text-xl space-y-4 mb-8">
               <li>
-                <a
-                  href="Team.html"
-                  class="block px-4 py-3 text-gray-800 whitespace-nowrap hover:bg-gray-100"
-                  >Our Team</a
-                >
+                For individuals moving between care environments (e.g.,
+                hospital to home or independent living to assisted care).
+              </li>
+              <li>
+                Focused on promoting recovery, stability, and independence.
+              </li>
+              <li>
+                Services include temporary care, rehabilitation support, and
+                personalized assistance to adapt to new routines.
               </li>
             </ul>
-          </li>
-          <li class="group relative">
-            <a
-              href=""
-              class="nav-link font-semibold hover:text-[#C49E35] transition-colors duration-200 flex items-center"
-            >
-              Our Services
-              <svg
-                class="ml-1 w-4 h-4 transform group-hover:rotate-180 transition-transform duration-200"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"
-                ></path>
-              </svg>
-            </a>
-            <ul
-              class="absolute hidden group-hover:block top-full left-0 bg-white shadow-lg min-w-[160px] z-50 rounded-lg overflow-hidden"
-            >
+            <div class="text-center lg:text-left">
+              <a href="Transitional.html"
+                class="inline-block bg-blue-900 text-white font-semibold py-3 px-8 rounded-full hover:bg-[#C49E35] transition-colors duration-200 shadow-lg">
+                Learn more
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nursing Home Care Section -->
+      <div class="bg-gray-100 py-4 md:py-6 px-8 md:px-12 rounded-lg shadow-md mb-16 md:mb-24">
+        <div class="flex flex-col lg:flex-row-reverse items-center lg:items-start gap-8">
+          <!-- Right Column (Image now on left due to flex-row-reverse) -->
+          <div class="w-full lg:w-1/2 flex justify-center items-center">
+            <img src="Assets/10_edited.jpg" alt="Nursing Home Care"
+              class="rounded-lg shadow-xl w-full h-auto object-cover" />
+          </div>
+
+          <!-- Left Column (Text now on right due to flex-row-reverse) -->
+          <div class="w-full lg:w-1/2 text-left flex flex-col justify-center">
+            <h3 class="text-blue-900 text-3xl md:text-4xl font-extrabold mb-6">
+              Nursing Home Care
+            </h3>
+            <ul class="list-disc list-inside text-gray-700 text-lg md:text-xl space-y-4 mb-8">
               <li>
-                <a
-                  href="Homecare.html"
-                  class="block px-4 py-3 text-gray-800 whitespace-nowrap hover:bg-gray-100"
-                  >Home Care</a
-                >
+                Designed for clients requiring round-the-clock medical
+                supervision and specialized care.
               </li>
               <li>
-                <a
-                  href="Nursing.html"
-                  class="block px-4 py-3 text-gray-800 whitespace-nowrap hover:bg-gray-100"
-                  >Nursing Home</a
-                >
+                Staffed by professional nurses and caregivers trained to
+                handle complex health needs.
               </li>
               <li>
-                <a
-                  href="Transitional.html"
-                  class="block px-4 py-3 text-gray-800 whitespace-nowrap hover:bg-gray-100"
-                  >Transitional Health</a
-                >
-              </li>
-              <li>
-                <a
-                  href="Retirement.html"
-                  class="block px-4 py-3 text-gray-800 whitespace-nowrap hover:bg-gray-100"
-                  >Retirement Living</a
-                >
+                Emphasis on comfort, safety, and maintaining quality of life
+                in a supportive community environment.
               </li>
             </ul>
+            <div class="text-center lg:text-left">
+              <a href="Nursing.html"
+                class="inline-block bg-blue-900 text-white font-semibold py-3 px-8 rounded-full hover:bg-[#C49E35] transition-colors duration-200 shadow-lg">
+                Learn more
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Transitional Health Section -->
+      <div class="bg-gray-100 py-4 md:py-6 px-8 md:px-12 rounded-lg shadow-md mb-16 md:mb-24">
+        <div class="flex flex-col lg:flex-row items-center lg:items-start gap-8">
+          <!-- Left Column: Image -->
+          <div class="w-full lg:w-1/2 flex justify-center items-center">
+            <img src="Assets/Nurse_fitted_1612x1080.jpg" alt="Transitional Health"
+              class="rounded-lg shadow-xl w-full h-auto object-cover" />
+          </div>
+
+          <!-- Right Column: Transitional Health Content -->
+          <div class="w-full lg:w-1/2 text-left flex flex-col justify-center">
+            <h3 class="text-blue-900 text-3xl md:text-4xl font-extrabold mb-6">
+              Home Care Services
+            </h3>
+            <ul class="list-disc list-inside text-gray-700 text-lg md:text-xl space-y-4 mb-8">
+              <li>
+                Tailored care delivered in the comfort of a client’s home.
+              </li>
+              <li>
+                Services include assistance with daily living activities,
+                medication management, and companionship.
+              </li>
+              <li>
+                Ideal for those who wish to maintain independence while
+                receiving professional support.
+              </li>
+            </ul>
+            <div class="text-center lg:text-left">
+              <a href="Homecare.html"
+                class="inline-block bg-blue-900 text-white font-semibold py-3 px-8 rounded-full hover:bg-[#C49E35] transition-colors duration-200 shadow-lg">
+                Learn more
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Retirement Health Care Section -->
+      <div class="bg-gray-100 py-4 md:py-6 px-8 md:px-12 rounded-lg shadow-md mb-16 md:mb-24">
+        <div class="flex flex-col lg:flex-row items-center lg:items-start gap-8">
+          <!-- Left Column: Image -->
+          <div class="w-full lg:w-1/2 flex justify-center items-center">
+            <img src="Assets/9_edited.jpg" alt="Retirement Health Care"
+              class="rounded-lg shadow-xl w-full h-auto object-cover" />
+          </div>
+
+          <!-- Right Column: Retirement Health Care Content -->
+          <div class="w-full lg:w-1/2 text-left flex flex-col justify-center">
+            <h3 class="text-blue-900 text-3xl md:text-4xl font-extrabold mb-6">
+              Retirement Health Care
+            </h3>
+            <ul class="list-disc list-inside text-gray-700 text-lg md:text-xl space-y-4 mb-8">
+              <li>
+                Comprehensive health services for seniors in retirement
+                communities or private homes.
+              </li>
+              <li>
+                Focused on preventive care, chronic disease management, and
+                promoting active lifestyles.
+              </li>
+              <li>
+                Services also include regular health monitoring and support
+                for family caregivers.
+              </li>
+            </ul>
+            <div class="text-center lg:text-left">
+              <a href="Retirement.html"
+                class="inline-block bg-blue-900 text-white font-semibold py-3 px-8 rounded-full hover:bg-[#C49E35] transition-colors duration-200 shadow-lg">
+                Learn more
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--====================FOOTER================ -->
+
+  <section class="bg-blue-900 py-20 px-6 md:px-16 text-white">
+    <div class="max-w-6xl mx-auto text-left">
+      <h2 class="text-4xl md:text-6xl font-extrabold leading-tight mb-10" data-aos="fade-right"
+        data-aos-duration="1000">
+        Be the First to Receive the<br />
+        Latest News
+      </h2>
+      <form class="mt-6">
+        <a href="/"
+          class="inline-block bg-white text-blue-900 text-lg font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 transition-colors duration-200">
+          Sign Up
+        </a>
+      </form>
+    </div>
+  </section>
+
+  <footer class="bg-blue-900 text-white py-12 px-4 md:px-12">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="flex flex-col items-center md:items-start space-y-4">
+        <a href="index.html">
+          <img src="Assets/IWACU_HOMECARE_LOGO-removebg-preview.png" alt="Iwacu Dignity Home Care Logo"
+            class="h-60 w-auto block -mt-12" />
+        </a>
+      </div>
+
+      <div class="text-center md:text-left">
+        <h4 class="font-bold text-lg mb-4">Navigation</h4>
+        <ul class="space-y-2">
+          <li>
+            <a href="Iwacudifference.html" class="text-gray-400 hover:text-white transition-colors duration-200">About
+              Us</a>
           </li>
           <li>
-            <a
-              href="Contact.html"
-              class="nav-link font-semibold hover:text-[#C49E35] transition-colors duration-200"
-              >Contact Us</a
-            >
+            <a href="Services.html" class="text-gray-400 hover:text-white transition-colors duration-200">Our
+              Services</a>
+          </li>
+          <li>
+            <a href="Contact.html" class="text-gray-400 hover:text-white transition-colors duration-200">Contact Us</a>
           </li>
         </ul>
-
-        <a
-          href="Contact.html"
-          class="hidden md:block bg-[#C49E35] text-white font-semibold py-2 px-6 rounded-full hover:bg-white hover:text-blue-900 transition-colors duration-200 shadow-md"
-        >
-          Get In Touch
-        </a>
-
-        <div class="md:hidden">
-          <button
-            id="mobile-menu-toggle"
-            class="focus:outline-none hamburger-icon"
-          >
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-        </div>
       </div>
-    </nav>
-    <!-- Mobile Menu Overlay -->
-    <div id="mobile-menu-overlay" class="mobile-menu-overlay"></div>
 
-    <!-- Mobile Menu Sidebar -->
-    <div id="mobile-menu" class="mobile-menu">
-      <button class="close-btn" id="mobile-menu-close">&times;</button>
-      <ul class="flex flex-col">
-        <li><a href="index.html">Home</a></li>
-        <li class="relative">
-          <a
-            href="Iwacudifference.html"
-            class="mobile-dropdown-toggle"
-            data-target="mobile-dropdown-1"
-          >
-            Iwacu Difference
-            <svg
-              class="mobile-dropdown-icon w-5 h-5"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M9 5l7 7-7 7"
-              ></path>
+      <div class="text-center md:text-left">
+        <h4 class="font-bold text-lg mb-4">Social</h4>
+        <ul class="space-y-2">
+          <li>
+            <a href="https://www.facebook.com/Iwacu-Dignity-Home-Care/"
+              class="text-gray-400 hover:text-white transition-colors duration-200" target="_blank">Facebook</a>
+          </li>
+          <li>
+            <a href="" class="text-gray-400 hover:text-white transition-colors duration-200">LinkedIn</a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/@iwacudignityhomecare8501"
+              class="text-gray-400 hover:text-white transition-colors duration-200" target="_blank">YouTube</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="text-center md:text-left">
+        <h4 class="font-bold text-lg mb-4">Contact</h4>
+        <ul class="space-y-2">
+          <li class="flex items-center space-x-2 justify-center md:justify-start">
+            <svg class="w-5 h-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+              <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
             </svg>
-          </a>
-          <ul id="mobile-dropdown-1" class="mobile-dropdown-content">
-            <li><a href="Team.html">Our Team</a></li>
-          </ul>
-        </li>
-        <li class="relative">
-          <a
-            href="/"
-            class="mobile-dropdown-toggle"
-            data-target="mobile-dropdown-2"
-          >
-            Our Services
-            <svg
-              class="mobile-dropdown-icon w-5 h-5"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+            <a href="mailto:iwacuhomecare@gmail.com"
+              class="text-gray-400 hover:text-white transition-colors duration-200">Email: iwacuhomecare@gmail.com</a>
+          </li>
+          <li class="flex items-center space-x-2 justify-center md:justify-start">
+            <svg class="w-5 h-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M9 5l7 7-7 7"
-              ></path>
+                d="M2 3a1 1 0 011-1h2.153a1 1 0 01.928.688l2.245 4.5a1 1 0 01-.153 1.025l-1.584 1.584a8.133 8.133 0 004.583 4.583l1.584-1.584a1 1 0 011.025-.153l4.5 2.245a1 1 0 01.688.928V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z">
+              </path>
             </svg>
-          </a>
-          <ul id="mobile-dropdown-2" class="mobile-dropdown-content">
-            <li><a href="Homecare.html">Home Care</a></li>
-            <li><a href="Nursing.html">Nursing Home</a></li>
-            <li><a href="Transitional.html">Transitional Health</a></li>
-            <li><a href="Retirement.html">Retirement Living</a></li>
-          </ul>
-        </li>
-        <li><a href="Contact.html">Contact Us</a></li>
-      </ul>
-      <a href="#" class="mobile-button">Get In Touch</a>
+            <a href="tel:+250791434761" class="text-gray-400 hover:text-white transition-colors duration-200">Tel:
+              (+250) 791-434-761</a>
+          </li>
+          <li class="flex items-start space-x-2 justify-center md:justify-start">
+            <svg class="w-5 h-5 text-gray-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd"
+                d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                clip-rule="evenodd"></path>
+            </svg>
+            <span class="text-gray-400">Address: Kigali Rwanda</span>
+          </li>
+        </ul>
+      </div>
     </div>
 
-    <!-- Hero Section -->
+    <div class="container mx-auto text-center mt-8 pt-4 border-t border-yellow-600">
+      <p class="text-gray-400 text-sm">
+        &copy; 2023 Iwacu Dignity Home Care. All rights reserved.
+      </p>
+    </div>
+  </footer>
 
-    <section
-      class="relative h-screen bg-cover bg-center bg-no-repeat flex items-center px-4 md:px-20"
-      style="background-image: url('Assets/Hero.jpg')"
-    >
-      <div class="relative max-w-xl z-10 text-[#324998]">
-        <h1 class="text-4xl md:text-5xl font-semibold mb-6 leading-tight">
-          Our Continuum of<br />
-          Services
-        </h1>
-        <p class="text-lg md:text-xl leading-relaxed mb-8 text-gray-800">
-          Iwacu Dignity Home Care offers exceptional<br />
-          home care services designed to enhance well-being,<br />
-          foster independence, and ensure the highest level <br />
-          of satisfaction clients and their families.
-        </p>
-      </div>
-    </section>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="Js/main.js"></script>
+</body>
 
-    <section class="bg-white py-16 md:py-24">
-      <div class="container mx-auto px-4">
-        <!-- Introductory Paragraph -->
-        <div
-          class="max-w-4xl mx-auto bg-gray-100 p-8 rounded-lg shadow-md mb-16"
-        >
-          <p
-            class="text-gray-700 text-lg md:text-xl leading-relaxed text-center"
-          >
-            Are you struggling to find reliable, compassionate care for your
-            loved ones? Do you worry about their health, safety, and emotional
-            well-being while juggling your own responsibilities? At Iwacu
-            Dignity Home Care, we understand the pain of not being able to be
-            there for those who need you the most. That's why we're here—to
-            provide the expert care and genuine compassion your family deserves.
-            Our wide range of services is designed to meet every need with
-            dignity, professionalism, and a personal touch, so you can find
-            peace of mind knowing your loved ones are in the best hands.
-          </p>
-        </div>
-
-        <!-- Transitional Health Section -->
-        <div
-          class="bg-gray-100 py-4 md:py-6 px-8 md:px-12 rounded-lg shadow-md mb-16 md:mb-24"
-        >
-          <div
-            class="flex flex-col lg:flex-row items-center lg:items-start gap-8"
-          >
-            <!-- Left Column: Image -->
-            <div class="w-full lg:w-1/2 flex justify-center items-center">
-              <img
-                src="Assets/8_edited.jpg"
-                alt="Transitional Health"
-                class="rounded-lg shadow-xl w-full h-auto object-cover"
-              />
-            </div>
-
-            <!-- Right Column: Transitional Health Content -->
-            <div class="w-full lg:w-1/2 text-left flex flex-col justify-center">
-              <h3
-                class="text-blue-900 text-3xl md:text-4xl font-extrabold mb-6"
-              >
-                Transitional Health
-              </h3>
-              <ul
-                class="list-disc list-inside text-gray-700 text-lg md:text-xl space-y-4 mb-8"
-              >
-                <li>
-                  For individuals moving between care environments (e.g.,
-                  hospital to home or independent living to assisted care).
-                </li>
-                <li>
-                  Focused on promoting recovery, stability, and independence.
-                </li>
-                <li>
-                  Services include temporary care, rehabilitation support, and
-                  personalized assistance to adapt to new routines.
-                </li>
-              </ul>
-              <div class="text-center lg:text-left">
-                <a
-                  href="Transitional.html"
-                  class="inline-block bg-blue-900 text-white font-semibold py-3 px-8 rounded-full hover:bg-[#C49E35] transition-colors duration-200 shadow-lg"
-                >
-                  Learn more
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Nursing Home Care Section -->
-        <div
-          class="bg-gray-100 py-4 md:py-6 px-8 md:px-12 rounded-lg shadow-md mb-16 md:mb-24"
-        >
-          <div
-            class="flex flex-col lg:flex-row-reverse items-center lg:items-start gap-8"
-          >
-            <!-- Right Column (Image now on left due to flex-row-reverse) -->
-            <div class="w-full lg:w-1/2 flex justify-center items-center">
-              <img
-                src="Assets/10_edited.jpg"
-                alt="Nursing Home Care"
-                class="rounded-lg shadow-xl w-full h-auto object-cover"
-              />
-            </div>
-
-            <!-- Left Column (Text now on right due to flex-row-reverse) -->
-            <div class="w-full lg:w-1/2 text-left flex flex-col justify-center">
-              <h3
-                class="text-blue-900 text-3xl md:text-4xl font-extrabold mb-6"
-              >
-                Nursing Home Care
-              </h3>
-              <ul
-                class="list-disc list-inside text-gray-700 text-lg md:text-xl space-y-4 mb-8"
-              >
-                <li>
-                  Designed for clients requiring round-the-clock medical
-                  supervision and specialized care.
-                </li>
-                <li>
-                  Staffed by professional nurses and caregivers trained to
-                  handle complex health needs.
-                </li>
-                <li>
-                  Emphasis on comfort, safety, and maintaining quality of life
-                  in a supportive community environment.
-                </li>
-              </ul>
-              <div class="text-center lg:text-left">
-                <a
-                  href="Nursing.html"
-                  class="inline-block bg-blue-900 text-white font-semibold py-3 px-8 rounded-full hover:bg-[#C49E35] transition-colors duration-200 shadow-lg"
-                >
-                  Learn more
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Transitional Health Section -->
-        <div
-          class="bg-gray-100 py-4 md:py-6 px-8 md:px-12 rounded-lg shadow-md mb-16 md:mb-24"
-        >
-          <div
-            class="flex flex-col lg:flex-row items-center lg:items-start gap-8"
-          >
-            <!-- Left Column: Image -->
-            <div class="w-full lg:w-1/2 flex justify-center items-center">
-              <img
-                src="Assets/Nurse_fitted_1612x1080.jpg"
-                alt="Transitional Health"
-                class="rounded-lg shadow-xl w-full h-auto object-cover"
-              />
-            </div>
-
-            <!-- Right Column: Transitional Health Content -->
-            <div class="w-full lg:w-1/2 text-left flex flex-col justify-center">
-              <h3
-                class="text-blue-900 text-3xl md:text-4xl font-extrabold mb-6"
-              >
-                Home Care Services
-              </h3>
-              <ul
-                class="list-disc list-inside text-gray-700 text-lg md:text-xl space-y-4 mb-8"
-              >
-                <li>
-                  Tailored care delivered in the comfort of a client’s home.
-                </li>
-                <li>
-                  Services include assistance with daily living activities,
-                  medication management, and companionship.
-                </li>
-                <li>
-                  Ideal for those who wish to maintain independence while
-                  receiving professional support.
-                </li>
-              </ul>
-              <div class="text-center lg:text-left">
-                <a
-                  href="Homecare.html"
-                  class="inline-block bg-blue-900 text-white font-semibold py-3 px-8 rounded-full hover:bg-[#C49E35] transition-colors duration-200 shadow-lg"
-                >
-                  Learn more
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Retirement Health Care Section -->
-        <div
-          class="bg-gray-100 py-4 md:py-6 px-8 md:px-12 rounded-lg shadow-md mb-16 md:mb-24"
-        >
-          <div
-            class="flex flex-col lg:flex-row items-center lg:items-start gap-8"
-          >
-            <!-- Left Column: Image -->
-            <div class="w-full lg:w-1/2 flex justify-center items-center">
-              <img
-                src="Assets/9_edited.jpg"
-                alt="Retirement Health Care"
-                class="rounded-lg shadow-xl w-full h-auto object-cover"
-              />
-            </div>
-
-            <!-- Right Column: Retirement Health Care Content -->
-            <div class="w-full lg:w-1/2 text-left flex flex-col justify-center">
-              <h3
-                class="text-blue-900 text-3xl md:text-4xl font-extrabold mb-6"
-              >
-                Retirement Health Care
-              </h3>
-              <ul
-                class="list-disc list-inside text-gray-700 text-lg md:text-xl space-y-4 mb-8"
-              >
-                <li>
-                  Comprehensive health services for seniors in retirement
-                  communities or private homes.
-                </li>
-                <li>
-                  Focused on preventive care, chronic disease management, and
-                  promoting active lifestyles.
-                </li>
-                <li>
-                  Services also include regular health monitoring and support
-                  for family caregivers.
-                </li>
-              </ul>
-              <div class="text-center lg:text-left">
-                <a
-                  href="Retirement.html"
-                  class="inline-block bg-blue-900 text-white font-semibold py-3 px-8 rounded-full hover:bg-[#C49E35] transition-colors duration-200 shadow-lg"
-                >
-                  Learn more
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--====================FOOTER================ -->
-
-    <section class="bg-blue-900 py-20 px-6 md:px-16 text-white">
-      <div class="max-w-6xl mx-auto text-left">
-        <h2
-          class="text-4xl md:text-6xl font-extrabold leading-tight mb-10"
-          data-aos="fade-right"
-          data-aos-duration="1000"
-        >
-          Be the First to Receive the<br />
-          Latest News
-        </h2>
-        <form class="mt-6">
-          <a
-            href="/"
-            class="inline-block bg-white text-blue-900 text-lg font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 transition-colors duration-200"
-          >
-            Sign Up
-          </a>
-        </form>
-      </div>
-    </section>
-
-    <footer class="bg-blue-900 text-white py-12 px-4 md:px-12">
-      <div
-        class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
-      >
-        <div class="flex flex-col items-center md:items-start space-y-4">
-          <img
-            src="Assets/IWACU_HOMECARE_LOGO-removebg-preview.png"
-            alt="Iwacu Dignity Home Care Logo"
-            class="h-60 w-auto block -mt-12"
-          />
-        </div>
-
-        <div class="text-center md:text-left">
-          <h4 class="font-bold text-lg mb-4">Navigation</h4>
-          <ul class="space-y-2">
-            <li>
-              <a
-                href="index.html"
-                class="text-gray-400 hover:text-white transition-colors duration-200"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a
-                href="Iwacudifference.html"
-                class="text-gray-400 hover:text-white transition-colors duration-200"
-                >About</a
-              >
-            </li>
-            <li>
-              <a
-                href="Contact.html"
-                class="text-gray-400 hover:text-white transition-colors duration-200"
-                >Contact</a
-              >
-            </li>
-          </ul>
-        </div>
-
-        <div class="text-center md:text-left">
-          <h4 class="font-bold text-lg mb-4">Social</h4>
-          <ul class="space-y-2">
-            <li>
-              <a
-                href="https://www.facebook.com/Iwacu-Dignity-Home-Care/"
-                class="text-gray-400 hover:text-white transition-colors duration-200"
-                target="_blank"
-                >Facebook</a
-              >
-            </li>
-            <li>
-              <a
-                href=""
-                class="text-gray-400 hover:text-white transition-colors duration-200"
-                >LinkedIn</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://www.youtube.com/@iwacudignityhomecare8501"
-                class="text-gray-400 hover:text-white transition-colors duration-200"
-                target="_blank"
-                >YouTube</a
-              >
-            </li>
-          </ul>
-        </div>
-
-        <div class="text-center md:text-left">
-          <h4 class="font-bold text-lg mb-4">Contact</h4>
-          <ul class="space-y-2">
-            <li
-              class="flex items-center space-x-2 justify-center md:justify-start"
-            >
-              <svg
-                class="w-5 h-5 text-gray-400"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
-                ></path>
-                <path
-                  d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
-                ></path>
-              </svg>
-              <a
-                href="mailto:iwacuhomecare@gmail.com"
-                class="text-gray-400 hover:text-white transition-colors duration-200"
-                >Email: iwacuhomecare@gmail.com</a
-              >
-            </li>
-            <li
-              class="flex items-center space-x-2 justify-center md:justify-start"
-            >
-              <svg
-                class="w-5 h-5 text-gray-400"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  d="M2 3a1 1 0 011-1h2.153a1 1 0 01.928.688l2.245 4.5a1 1 0 01-.153 1.025l-1.584 1.584a8.133 8.133 0 004.583 4.583l1.584-1.584a1 1 0 011.025-.153l4.5 2.245a1 1 0 01.688.928V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"
-                ></path>
-              </svg>
-              <a
-                href="tel:+250791434761"
-                class="text-gray-400 hover:text-white transition-colors duration-200"
-                >Tel: (+250) 791-434-761</a
-              >
-            </li>
-            <li
-              class="flex items-start space-x-2 justify-center md:justify-start"
-            >
-              <svg
-                class="w-5 h-5 text-gray-400 flex-shrink-0"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-              <span class="text-gray-400">Address: Kigali Rwanda</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div
-        class="container mx-auto text-center mt-8 pt-4 border-t border-yellow-600"
-      >
-        <p class="text-gray-400 text-sm">
-          &copy; 2023 Iwacu Dignity Home Care. All rights reserved.
-        </p>
-      </div>
-    </footer>
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="Js/main.js"></script>
-  </body>
 </html>

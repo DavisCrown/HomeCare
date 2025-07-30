@@ -1,585 +1,380 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Iwacu Difference</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="Css/styles.css" />
-  </head>
-  <body>
-    <nav class="bg-blue-900 text-white p-4 shadow-lg w-full">
-      <div class="container mx-auto flex justify-between items-center">
-        <a href="index.html" class="flex items-center space-x-2">
-          <img
-            src="Assets/IWACU_HOMECARE_LOGO-removebg-preview.png"
-            alt="Iwacu Home Care Logo"
-            class="h-32 w-auto rounded-full object-cover"
-          />
-        </a>
 
-        <ul class="hidden md:flex space-x-12 items-center">
-          <li>
-            <a
-              href="index.html"
-              class="nav-link font-semibold hover:text-[#C49E35] transition-colors duration-200"
-              >Home</a
-            >
-          </li>
-          <li class="group relative">
-            <a
-              href="Iwacudifference.html"
-              class="nav-link font-semibold hover:text-[#C49E35] transition-colors duration-200 flex items-center"
-            >
-              Iwacu Difference
-              <svg
-                class="ml-1 w-4 h-4 transform group-hover:rotate-180 transition-transform duration-200"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"
-                ></path>
-              </svg>
-            </a>
-            <ul
-              class="absolute hidden group-hover:block top-full left-0 bg-white shadow-lg min-w-[160px] z-50 rounded-lg overflow-hidden"
-            >
-              <li>
-                <a
-                  href="Team.html"
-                  class="block px-4 py-3 text-gray-800 whitespace-nowrap hover:bg-gray-100"
-                  >Our Team</a
-                >
-              </li>
-            </ul>
-          </li>
-          <li class="group relative">
-            <a
-              href=""
-              class="nav-link font-semibold hover:text-[#C49E35] transition-colors duration-200 flex items-center"
-            >
-              Our Services
-              <svg
-                class="ml-1 w-4 h-4 transform group-hover:rotate-180 transition-transform duration-200"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"
-                ></path>
-              </svg>
-            </a>
-            <ul
-              class="absolute hidden group-hover:block top-full left-0 bg-white shadow-lg min-w-[160px] z-50 rounded-lg overflow-hidden"
-            >
-              <li>
-                <a
-                  href="Homecare.html"
-                  class="block px-4 py-3 text-gray-800 whitespace-nowrap hover:bg-gray-100"
-                  >Home Care</a
-                >
-              </li>
-              <li>
-                <a
-                  href="Nursing.html"
-                  class="block px-4 py-3 text-gray-800 whitespace-nowrap hover:bg-gray-100"
-                  >Nursing Home</a
-                >
-              </li>
-              <li>
-                <a
-                  href="Transitional.html"
-                  class="block px-4 py-3 text-gray-800 whitespace-nowrap hover:bg-gray-100"
-                  >Transitional Health</a
-                >
-              </li>
-              <li>
-                <a
-                  href="Retirement.html"
-                  class="block px-4 py-3 text-gray-800 whitespace-nowrap hover:bg-gray-100"
-                  >Retirement Living</a
-                >
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a
-              href="Contact.html"
-              class="nav-link font-semibold hover:text-[#C49E35] transition-colors duration-200"
-              >Contact Us</a
-            >
-          </li>
-        </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iwacu Difference</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="Css/styles.css" />
+</head>
 
-        <a
-          href="Contact.html"
-          class="hidden md:block bg-[#C49E35] text-white font-semibold py-2 px-6 rounded-full hover:bg-white hover:text-blue-900 transition-colors duration-200 shadow-md"
-        >
-          Get In Touch
-        </a>
+<body>
+  <nav class="bg-blue-900 text-white p-4 shadow-lg w-full">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="index.html" class="flex items-center space-x-2">
+        <img src="Assets/IWACU_HOMECARE_LOGO-removebg-preview.png" alt="Iwacu Home Care Logo"
+          class="h-32 w-auto rounded-full object-cover" />
+      </a>
 
-        <div class="md:hidden">
-          <button
-            id="mobile-menu-toggle"
-            class="focus:outline-none hamburger-icon"
-          >
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-        </div>
-      </div>
-    </nav>
-    <div id="mobile-menu-overlay" class="mobile-menu-overlay"></div>
-
-    <div id="mobile-menu" class="mobile-menu">
-      <button class="close-btn" id="mobile-menu-close">×</button>
-      <ul class="flex flex-col">
-        <li><a href="index.html">Home</a></li>
-        <li class="relative">
-          <a
-            href="Iwacudifference.html"
-            class="mobile-dropdown-toggle"
-            data-target="mobile-dropdown-1"
-          >
+      <ul class="hidden md:flex space-x-12 items-center">
+        <li>
+          <a href="index.html"
+            class="nav-link font-semibold hover:text-[#C49E35] transition-colors duration-200">Home</a>
+        </li>
+        <li class="group relative">
+          <a href="Iwacudifference.html"
+            class="nav-link font-semibold hover:text-[#C49E35] transition-colors duration-200 flex items-center">
             Iwacu Difference
-            <svg
-              class="mobile-dropdown-icon w-5 h-5"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M9 5l7 7-7 7"
-              ></path>
+            <svg class="ml-1 w-4 h-4 transform group-hover:rotate-180 transition-transform duration-200" fill="none"
+              stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
             </svg>
           </a>
-          <ul id="mobile-dropdown-1" class="mobile-dropdown-content">
-            <li><a href="Team.html">Our Team</a></li>
+          <ul
+            class="absolute hidden group-hover:block top-full left-0 bg-white shadow-lg min-w-[160px] z-50 rounded-lg overflow-hidden">
+            <li>
+              <a href="Team.html" class="block px-4 py-3 text-gray-800 whitespace-nowrap hover:bg-gray-100">Our Team</a>
+            </li>
           </ul>
         </li>
-        <li class="relative">
-          <a
-            href="/"
-            class="mobile-dropdown-toggle"
-            data-target="mobile-dropdown-2"
-          >
+        <li class="group relative">
+          <a href="Services.html"
+            class="nav-link font-semibold hover:text-[#C49E35] transition-colors duration-200 flex items-center">
             Our Services
-            <svg
-              class="mobile-dropdown-icon w-5 h-5"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M9 5l7 7-7 7"
-              ></path>
+            <svg class="ml-1 w-4 h-4 transform group-hover:rotate-180 transition-transform duration-200" fill="none"
+              stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
             </svg>
           </a>
-          <ul id="mobile-dropdown-2" class="mobile-dropdown-content">
-            <li><a href="Homecare.html">Home Care</a></li>
-            <li><a href="Nursing.html">Nursing Home</a></li>
-            <li><a href="Transitional.html">Transitional Health</a></li>
-            <li><a href="Retirement.html">Retirement Living</a></li>
+          <ul
+            class="absolute hidden group-hover:block top-full left-0 bg-white shadow-lg min-w-[160px] z-50 rounded-lg overflow-hidden">
+            <li>
+              <a href="Homecare.html" class="block px-4 py-3 text-gray-800 whitespace-nowrap hover:bg-gray-100">Home
+                Care</a>
+            </li>
+            <li>
+              <a href="Nursing.html" class="block px-4 py-3 text-gray-800 whitespace-nowrap hover:bg-gray-100">Nursing
+                Home</a>
+            </li>
+            <li>
+              <a href="Transitional.html"
+                class="block px-4 py-3 text-gray-800 whitespace-nowrap hover:bg-gray-100">Transitional Health</a>
+            </li>
+            <li>
+              <a href="Retirement.html"
+                class="block px-4 py-3 text-gray-800 whitespace-nowrap hover:bg-gray-100">Retirement Living</a>
+            </li>
           </ul>
         </li>
-        <li><a href="Contact.html">Contact Us</a></li>
+        <li>
+          <a href="Contact.html"
+            class="nav-link font-semibold hover:text-[#C49E35] transition-colors duration-200">Contact Us</a>
+        </li>
       </ul>
-      <a href="Contact.html" class="mobile-button">Get In Touch</a>
-    </div>
 
-    <section
-      class="relative h-screen bg-cover bg-center bg-no-repeat flex items-center px-4 md:px-20"
-      style="background-image: url('Assets/IWACU.avif')"
-    >
-      <div class="relative max-w-xl z-10 text-[#324998]">
-        <h1 class="text-4xl md:text-5xl font-semibold mb-6 leading-tight">
-          We believe in supporting<br />
-          our elders at every stage<br />
-          of their lives
-        </h1>
-        <p class="text-lg md:text-xl leading-relaxed mb-8 text-gray-800">
-          We offer exceptional home care services designed to enhance
-          well-being,<br />
-          foster independence, and ensure the highest level of satisfaction
-          for<br />
-          clients and their families.
-        </p>
+      <a href="Contact.html"
+        class="hidden md:block bg-[#C49E35] text-white font-semibold py-2 px-6 rounded-full hover:bg-white hover:text-blue-900 transition-colors duration-200 shadow-md">
+        Get In Touch
+      </a>
+
+      <div class="md:hidden">
+        <button id="mobile-menu-toggle" class="focus:outline-none hamburger-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
-    </section>
+    </div>
+  </nav>
+  <div id="mobile-menu-overlay" class="mobile-menu-overlay"></div>
 
-    <section class="py-16 md:py-24 bg-white text-[#324998]">
-      <div class="w-full px-4 sm:px-6 md:max-w-[92vw] lg:max-w-[84vw] mx-auto">
-        <h2 class="text-center text-4xl md:text-5xl font-extrabold mb-12">
-          Our <span class="text-[#C49E35]">Story</span>
-        </h2>
+  <div id="mobile-menu" class="mobile-menu">
+    <button class="close-btn" id="mobile-menu-close">×</button>
+    <ul class="flex flex-col">
+      <li><a href="index.html">Home</a></li>
+      <li class="relative">
+        <a href="Iwacudifference.html" class="mobile-dropdown-toggle" data-target="mobile-dropdown-1">
+          Iwacu Difference
+          <svg class="mobile-dropdown-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+        </a>
+        <ul id="mobile-dropdown-1" class="mobile-dropdown-content">
+          <li><a href="Team.html">Our Team</a></li>
+        </ul>
+      </li>
+      <li class="relative">
+        <a href="/" class="mobile-dropdown-toggle" data-target="mobile-dropdown-2">
+          Our Services
+          <svg class="mobile-dropdown-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+        </a>
+        <ul id="mobile-dropdown-2" class="mobile-dropdown-content">
+          <li><a href="Homecare.html">Home Care</a></li>
+          <li><a href="Nursing.html">Nursing Home</a></li>
+          <li><a href="Transitional.html">Transitional Health</a></li>
+          <li><a href="Retirement.html">Retirement Living</a></li>
+        </ul>
+      </li>
+      <li><a href="Contact.html">Contact Us</a></li>
+    </ul>
+    <a href="Contact.html" class="mobile-button">Get In Touch</a>
+  </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div class="relative w-full overflow-hidden rounded-lg shadow-xl">
-            <div class="relative pt-[56.25%]">
-              <iframe
-                class="absolute top-0 left-0 w-full h-full rounded-lg"
-                src="https://www.youtube.com/embed/ro63kYy07cw"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-                title="Our Story Video"
-              ></iframe>
-            </div>
-          </div>
+  <section class="relative h-screen bg-cover bg-center bg-no-repeat flex items-center px-4 md:px-20"
+    style="background-image: url('Assets/IWACU.avif')">
+    <div class="relative max-w-xl z-10 text-[#324998]">
+      <h1 class="text-4xl md:text-5xl font-semibold mb-6 leading-tight">
+        We believe in supporting<br />
+        our elders at every stage<br />
+        of their lives
+      </h1>
+      <p class="text-lg md:text-xl leading-relaxed mb-8 text-gray-800">
+        We offer exceptional home care services designed to enhance
+        well-being,<br />
+        foster independence, and ensure the highest level of satisfaction
+        for<br />
+        clients and their families.
+      </p>
+    </div>
+  </section>
 
-          <div
-            class="bg-gray-100 p-6 md:p-10 rounded-lg shadow text-gray-700 text-center lg:text-left"
-          >
-            <p class="text-lg md:text-xl leading-relaxed mb-6">
-              It is an idea of Steven MUNYEJABO for helping Rwandans after
-              spending remarkable time in nursing care in Canada, New Brunswick.
-            </p>
-            <p class="text-lg md:text-xl leading-relaxed mb-6">
-              He thought of something that could help old people living with
-              frailty within the Rwandan community, either abroad or in Rwanda.
-            </p>
-            <p class="text-lg md:text-xl leading-relaxed">
-              He came up with this big idea of providing the best home care
-              services to old mothers and fathers wishing to return to their
-              homeland and those already in Rwanda but needing a more
-              comfortable home with professional and well-trained home carers.
-            </p>
+  <section class="py-16 md:py-24 bg-white text-[#324998]">
+    <div class="w-full px-4 sm:px-6 md:max-w-[92vw] lg:max-w-[84vw] mx-auto">
+      <h2 class="text-center text-4xl md:text-5xl font-extrabold mb-12">
+        Our <span class="text-[#C49E35]">Story</span>
+      </h2>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="relative w-full overflow-hidden rounded-lg shadow-xl">
+          <div class="relative pt-[56.25%]">
+            <iframe class="absolute top-0 left-0 w-full h-full rounded-lg"
+              src="https://www.youtube.com/embed/ro63kYy07cw" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen title="Our Story Video"></iframe>
           </div>
         </div>
-      </div>
-    </section>
 
-    <section class="bg-gray-50 py-16 md:py-24">
-      <div
-        class="w-full px-4 sm:px-6 md:max-w-[92vw] lg:max-w-[84vw] mx-auto flex flex-col md:flex-row items-center md:space-x-12"
-      >
-        <div class="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
-          <h2
-            class="text-[#C49E35] text-4xl md:text-5xl font-extrabold leading-tight mb-6"
-          >
-            Mission, Vision, Values
-          </h2>
-          <p class="text-[#324998] text-lg md:text-xl leading-relaxed mb-6">
-            <strong class="font-bold"
-              >Iwacu is the one and only company offering home care services in
-              Rwanda.</strong
-            >
-          </p>
-          <p class="text-gray-700 text-[17px] leading-relaxed mb-4">
+        <div class="bg-gray-100 p-6 md:p-10 rounded-lg shadow text-gray-700 text-center lg:text-left">
+          <p class="text-lg md:text-xl leading-relaxed mb-6">
             It is an idea of Steven MUNYEJABO for helping Rwandans after
             spending remarkable time in nursing care in Canada, New Brunswick.
           </p>
-          <p class="text-gray-700 text-[17px] leading-relaxed mb-4">
+          <p class="text-lg md:text-xl leading-relaxed mb-6">
             He thought of something that could help old people living with
             frailty within the Rwandan community, either abroad or in Rwanda.
           </p>
-          <p class="text-gray-700 text-[17px] leading-relaxed">
+          <p class="text-lg md:text-xl leading-relaxed">
             He came up with this big idea of providing the best home care
             services to old mothers and fathers wishing to return to their
-            homeland and those already in Rwanda but needing a more comfortable
-            home with professional and well-trained home carers.
+            homeland and those already in Rwanda but needing a more
+            comfortable home with professional and well-trained home carers.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-gray-50 py-16 md:py-24">
+    <div
+      class="w-full px-4 sm:px-6 md:max-w-[92vw] lg:max-w-[84vw] mx-auto flex flex-col md:flex-row items-center md:space-x-12">
+      <div class="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
+        <h2 class="text-[#C49E35] text-4xl md:text-5xl font-extrabold leading-tight mb-6">
+          Mission, Vision, Values
+        </h2>
+        <p class="text-[#324998] text-lg md:text-xl leading-relaxed mb-6">
+          <strong class="font-bold">Iwacu is the one and only company offering home care services in
+            Rwanda.</strong>
+        </p>
+        <p class="text-gray-700 text-[17px] leading-relaxed mb-4">
+          It is an idea of Steven MUNYEJABO for helping Rwandans after
+          spending remarkable time in nursing care in Canada, New Brunswick.
+        </p>
+        <p class="text-gray-700 text-[17px] leading-relaxed mb-4">
+          He thought of something that could help old people living with
+          frailty within the Rwandan community, either abroad or in Rwanda.
+        </p>
+        <p class="text-gray-700 text-[17px] leading-relaxed">
+          He came up with this big idea of providing the best home care
+          services to old mothers and fathers wishing to return to their
+          homeland and those already in Rwanda but needing a more comfortable
+          home with professional and well-trained home carers.
+        </p>
+      </div>
+
+      <div class="md:w-1/2 flex justify-center items-center">
+        <img src="Assets/edited.avif" alt="Team meeting with Iwacu banner"
+          class="rounded-lg shadow-xl w-full h-auto object-cover" />
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-gray-50 py-24 md:py-32 text-white">
+    <div class="w-full px-4 sm:px-6 md:max-w-[92vw] lg:max-w-[84vw] mx-auto bg-[#324998]">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="flex flex-col items-center text-center px-4 py-8 space-y-4">
+          <svg class="w-20 h-20 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+              d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z">
+            </path>
+          </svg>
+          <h3 class="text-2xl font-bold">Personalized Approach</h3>
+          <p class="text-gray-200">
+            Every care plan is uniquely crafted to meet the physical,
+            emotional, and social needs of our clients.
           </p>
         </div>
 
-        <div class="md:w-1/2 flex justify-center items-center">
-          <img
-            src="Assets/edited.avif"
-            alt="Team meeting with Iwacu banner"
-            class="rounded-lg shadow-xl w-full h-auto object-cover"
-          />
+        <div class="flex flex-col items-center text-center px-4 py-8 space-y-4">
+          <svg class="w-20 h-20 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+              d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5s3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18s-3.332.477-4.5 1.253">
+            </path>
+          </svg>
+          <h3 class="text-2xl font-bold">Cultural Values</h3>
+          <p class="text-gray-200">
+            Rooted in the meaning of "Iwacu" ("home" in Kinyarwanda), we
+            emphasize creating a warm, family-like environment.
+          </p>
+        </div>
+
+        <div class="flex flex-col items-center text-center px-4 py-8 space-y-4">
+          <svg class="w-20 h-20 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+              d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+          <h3 class="text-2xl font-bold">Experienced Team</h3>
+          <p class="text-gray-200">
+            Our highly trained professionals include caregivers, nurses, and
+            specialists with extensive experience.
+          </p>
+        </div>
+
+        <div class="flex flex-col items-center text-center px-4 py-8 space-y-4">
+          <svg class="w-20 h-20 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+              d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path>
+          </svg>
+          <h3 class="text-2xl font-bold">Seamless Transitions</h3>
+          <p class="text-gray-200">
+            We provide continuous care as clients' needs evolve, ensuring
+            smooth transitions between services without compromising quality.
+          </p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="bg-gray-50 py-24 md:py-32 text-white">
-      <div
-        class="w-full px-4 sm:px-6 md:max-w-[92vw] lg:max-w-[84vw] mx-auto bg-[#324998]"
-      >
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div
-            class="flex flex-col items-center text-center px-4 py-8 space-y-4"
-          >
-            <svg
-              class="w-20 h-20 text-yellow-400"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="1.5"
-                d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-              ></path>
+  <section class="bg-blue-900 py-20 px-6 md:px-16 text-white">
+    <div class="max-w-6xl mx-auto text-left">
+      <h2 class="text-4xl md:text-6xl font-extrabold leading-tight mb-10" data-aos="fade-right"
+        data-aos-duration="1000">
+        Be the First to Receive the<br />
+        Latest News
+      </h2>
+      <form class="mt-6">
+        <a href="#"
+          class="inline-block bg-white text-blue-900 text-lg font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 transition-colors duration-200">
+          Sign Up
+        </a>
+      </form>
+    </div>
+  </section>
+
+  <footer class="bg-blue-900 text-white py-12 px-4 md:px-12">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="flex flex-col items-center md:items-start space-y-4">
+        <a href="index.html">
+          <img src="Assets/IWACU_HOMECARE_LOGO-removebg-preview.png" alt="Iwacu Dignity Home Care Logo"
+            class="h-60 w-auto block -mt-12" />
+        </a>
+      </div>
+
+      <div class="text-center md:text-left">
+        <h4 class="font-bold text-lg mb-4">Navigation</h4>
+        <ul class="space-y-2">
+          <li>
+            <a href="Iwacudifference.html" class="text-gray-400 hover:text-white transition-colors duration-200">About
+              Us</a>
+          </li>
+          <li>
+            <a href="Services.html" class="text-gray-400 hover:text-white transition-colors duration-200">Our
+              Services</a>
+          </li>
+          <li>
+            <a href="Contact.html" class="text-gray-400 hover:text-white transition-colors duration-200">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="text-center md:text-left">
+        <h4 class="font-bold text-lg mb-4">Social</h4>
+        <ul class="space-y-2">
+          <li>
+            <a href="https://www.facebook.com/Iwacu-Dignity-Home-Care/"
+              class="text-gray-400 hover:text-white transition-colors duration-200" target="_blank">Facebook</a>
+          </li>
+          <li>
+            <a href="" class="text-gray-400 hover:text-white transition-colors duration-200">LinkedIn</a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/@iwacudignityhomecare8501"
+              class="text-gray-400 hover:text-white transition-colors duration-200" target="_blank">YouTube</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="text-center md:text-left">
+        <h4 class="font-bold text-lg mb-4">Contact</h4>
+        <ul class="space-y-2">
+          <li class="flex items-center space-x-2 justify-center md:justify-start">
+            <svg class="w-5 h-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+              <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
             </svg>
-            <h3 class="text-2xl font-bold">Personalized Approach</h3>
-            <p class="text-gray-200">
-              Every care plan is uniquely crafted to meet the physical,
-              emotional, and social needs of our clients.
-            </p>
-          </div>
-
-          <div
-            class="flex flex-col items-center text-center px-4 py-8 space-y-4"
-          >
-            <svg
-              class="w-20 h-20 text-yellow-400"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+            <a href="mailto:iwacuhomecare@gmail.com"
+              class="text-gray-400 hover:text-white transition-colors duration-200">Email: iwacuhomecare@gmail.com</a>
+          </li>
+          <li class="flex items-center space-x-2 justify-center md:justify-start">
+            <svg class="w-5 h-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="1.5"
-                d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5s3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18s-3.332.477-4.5 1.253"
-              ></path>
+                d="M2 3a1 1 0 011-1h2.153a1 1 0 01.928.688l2.245 4.5a1 1 0 01-.153 1.025l-1.584 1.584a8.133 8.133 0 004.583 4.583l1.584-1.584a1 1 0 011.025-.153l4.5 2.245a1 1 0 01.688.928V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z">
+              </path>
             </svg>
-            <h3 class="text-2xl font-bold">Cultural Values</h3>
-            <p class="text-gray-200">
-              Rooted in the meaning of "Iwacu" ("home" in Kinyarwanda), we
-              emphasize creating a warm, family-like environment.
-            </p>
-          </div>
-
-          <div
-            class="flex flex-col items-center text-center px-4 py-8 space-y-4"
-          >
-            <svg
-              class="w-20 h-20 text-yellow-400"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="1.5"
-                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-              ></path>
+            <a href="tel:+250791434761" class="text-gray-400 hover:text-white transition-colors duration-200">Tel:
+              (+250) 791-434-761</a>
+          </li>
+          <li class="flex items-start space-x-2 justify-center md:justify-start">
+            <svg class="w-5 h-5 text-gray-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd"
+                d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                clip-rule="evenodd"></path>
             </svg>
-            <h3 class="text-2xl font-bold">Experienced Team</h3>
-            <p class="text-gray-200">
-              Our highly trained professionals include caregivers, nurses, and
-              specialists with extensive experience.
-            </p>
-          </div>
-
-          <div
-            class="flex flex-col items-center text-center px-4 py-8 space-y-4"
-          >
-            <svg
-              class="w-20 h-20 text-yellow-400"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="1.5"
-                d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"
-              ></path>
-            </svg>
-            <h3 class="text-2xl font-bold">Seamless Transitions</h3>
-            <p class="text-gray-200">
-              We provide continuous care as clients' needs evolve, ensuring
-              smooth transitions between services without compromising quality.
-            </p>
-          </div>
-        </div>
+            <span class="text-gray-400">Address: Kigali Rwanda</span>
+          </li>
+        </ul>
       </div>
-    </section>
+    </div>
 
-    <section class="bg-blue-900 py-20 px-6 md:px-16 text-white">
-      <div class="max-w-6xl mx-auto text-left">
-        <h2
-          class="text-4xl md:text-6xl font-extrabold leading-tight mb-10"
-          data-aos="fade-right"
-          data-aos-duration="1000"
-        >
-          Be the First to Receive the<br />
-          Latest News
-        </h2>
-        <form class="mt-6">
-          <a
-            href="#"
-            class="inline-block bg-white text-blue-900 text-lg font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 transition-colors duration-200"
-          >
-            Sign Up
-          </a>
-        </form>
-      </div>
-    </section>
+    <div class="container mx-auto text-center mt-8 pt-4 border-t border-yellow-600">
+      <p class="text-gray-400 text-sm">
+        © 2023 Iwacu Dignity Home Care. All rights reserved.
+      </p>
+    </div>
+  </footer>
 
-    <footer class="bg-blue-900 text-white py-12 px-4 md:px-12">
-      <div
-        class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
-      >
-        <div class="flex flex-col items-center md:items-start space-y-4">
-          <img
-            src="Assets/IWACU_HOMECARE_LOGO-removebg-preview.png"
-            alt="Iwacu Dignity Home Care Logo"
-            class="h-60 w-auto block -mt-12"
-          />
-        </div>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="Js/main.js"></script>
+</body>
 
-        <div class="text-center md:text-left">
-          <h4 class="font-bold text-lg mb-4">Navigation</h4>
-          <ul class="space-y-2">
-            <li>
-              <a
-                href="index.html"
-                class="text-gray-400 hover:text-white transition-colors duration-200"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a
-                href="Iwacudifference.html"
-                class="text-gray-400 hover:text-white transition-colors duration-200"
-                >About</a
-              >
-            </li>
-            <li>
-              <a
-                href="Contact.html"
-                class="text-gray-400 hover:text-white transition-colors duration-200"
-                >Contact</a
-              >
-            </li>
-          </ul>
-        </div>
-
-        <div class="text-center md:text-left">
-          <h4 class="font-bold text-lg mb-4">Social</h4>
-          <ul class="space-y-2">
-            <li>
-              <a
-                href="https://www.facebook.com/Iwacu-Dignity-Home-Care/"
-                class="text-gray-400 hover:text-white transition-colors duration-200"
-                target="_blank"
-                >Facebook</a
-              >
-            </li>
-            <li>
-              <a
-                href=""
-                class="text-gray-400 hover:text-white transition-colors duration-200"
-                >LinkedIn</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://www.youtube.com/@iwacudignityhomecare8501"
-                class="text-gray-400 hover:text-white transition-colors duration-200"
-                target="_blank"
-                >YouTube</a
-              >
-            </li>
-          </ul>
-        </div>
-
-        <div class="text-center md:text-left">
-          <h4 class="font-bold text-lg mb-4">Contact</h4>
-          <ul class="space-y-2">
-            <li
-              class="flex items-center space-x-2 justify-center md:justify-start"
-            >
-              <svg
-                class="w-5 h-5 text-gray-400"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
-                ></path>
-                <path
-                  d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
-                ></path>
-              </svg>
-              <a
-                href="mailto:iwacuhomecare@gmail.com"
-                class="text-gray-400 hover:text-white transition-colors duration-200"
-                >Email: iwacuhomecare@gmail.com</a
-              >
-            </li>
-            <li
-              class="flex items-center space-x-2 justify-center md:justify-start"
-            >
-              <svg
-                class="w-5 h-5 text-gray-400"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  d="M2 3a1 1 0 011-1h2.153a1 1 0 01.928.688l2.245 4.5a1 1 0 01-.153 1.025l-1.584 1.584a8.133 8.133 0 004.583 4.583l1.584-1.584a1 1 0 011.025-.153l4.5 2.245a1 1 0 01.688.928V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"
-                ></path>
-              </svg>
-              <a
-                href="tel:+250791434761"
-                class="text-gray-400 hover:text-white transition-colors duration-200"
-                >Tel: (+250) 791-434-761</a
-              >
-            </li>
-            <li
-              class="flex items-start space-x-2 justify-center md:justify-start"
-            >
-              <svg
-                class="w-5 h-5 text-gray-400 flex-shrink-0"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-              <span class="text-gray-400">Address: Kigali Rwanda</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div
-        class="container mx-auto text-center mt-8 pt-4 border-t border-yellow-600"
-      >
-        <p class="text-gray-400 text-sm">
-          © 2023 Iwacu Dignity Home Care. All rights reserved.
-        </p>
-      </div>
-    </footer>
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="Js/main.js"></script>
-  </body>
 </html>
