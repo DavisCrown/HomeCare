@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-x-hidden">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOMEPAGE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="Css/styles.css" />
+  </head>
+  <body class="w-screen">
+    <nav class="bg-blue-900 text-white p-4 shadow-lg w-full">
+      <div class="container mx-auto flex justify-between items-center">
+        <a href="index.html" class="flex items-center space-x-2">
+          <img
+            src="Assets/IWACU_HOMECARE_LOGO-removebg-preview.png"
+            alt="Iwacu Home Care Logo"
+            class="h-32 w-auto rounded-full object-cover"
+          />
+        </a>
+
+        <ul class="hidden md:flex space-x-12 items-center">
+          <li>
+            <a
+              href="index.html"
+              class="nav-link font-semibold hover:text-[#C49E35] transition-colors duration-200"
+              >Home</a
+            >
+          </li>
+          <li class="group relative">
+            <a
+              href="Iwacudifference.html"
+              class="nav-link font-semibold hover:text-[#C49E35] transition-colors duration-200 flex items-center"
+            >
+              Iwacu Difference
+              <svg
+                class="ml-1 w-4 h-4 transform group-hover:rotate-180 transition-transform duration-200"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg>
+            </a>
+            <ul
+              class="absolute hidden group-hover:block top-full left-0 bg-white shadow-lg min-w-[160px] z-50 rounded-lg overflow-hidden"
+            >
+              <li>
+                <a
+                  href="Team.html"
+                  class="block px-4 py-3 text-gray-800 whitespace-nowrap hover:bg-gray-100"
+                  >Our Team</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="group relative">
+            <a
+              href=""
+              class="nav-link font-semibold hover:text-[#C49E35] transition-colors duration-200 flex items-center"
+            >
+              Our Services
+              <svg
+                class="ml-1 w-4 h-4 transform group-hover:rotate-180 transition-transform duration-200"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg>
+            </a>
+            <ul
+              class="absolute hidden group-hover:block top-full left-0 bg-white shadow-lg min-w-[160px] z-50 rounded-lg overflow-hidden"
+            >
+              <li>
+                <a
+                  href="Homecare.html"
+                  class="block px-4 py-3 text-gray-800 whitespace-nowrap hover:bg-gray-100"
+                  >Home Care</a
+                >
+              </li>
+              <li>
+                <a
+                  href="Nursing.html"
+                  class="block px-4 py-3 text-gray-800 whitespace-nowrap hover:bg-gray-100"
+                  >Nursing Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="Transitional.html"
+                  class="block px-4 py-3 text-gray-800 whitespace-nowrap hover:bg-gray-100"
+                  >Transitional Health</a
+                >
+              </li>
+              <li>
+                <a
+                  href="Retirement.html"
+                  class="block px-4 py-3 text-gray-800 whitespace-nowrap hover:bg-gray-100"
+                  >Retirement Living</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a
+              href="Contact.html"
+              class="nav-link font-semibold hover:text-[#C49E35] transition-colors duration-200"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+
+        <a
+          href="Contact.html"
+          class="hidden md:block bg-[#C49E35] text-white font-semibold py-2 px-6 rounded-full hover:bg-white hover:text-blue-900 transition-colors duration-200 shadow-md"
+        >
+          Get In Touch
+        </a>
+
+        <div class="md:hidden">
+          <button
+            id="mobile-menu-toggle"
+            class="focus:outline-none hamburger-icon"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div id="mobile-menu-overlay" class="mobile-menu-overlay"></div>
+
+    <div id="mobile-menu" class="mobile-menu">
+      <button class="close-btn" id="mobile-menu-close">×</button>
+      <ul class="flex flex-col">
+        <li><a href="index.html">Home</a></li>
+        <li class="relative">
+          <a
+            href="Iwacudifference.html"
+            class="mobile-dropdown-toggle"
+            data-target="mobile-dropdown-1"
+          >
+            Iwacu Difference
+            <svg
+              class="mobile-dropdown-icon w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"
+              ></path>
+            </svg>
+          </a>
+          <ul id="mobile-dropdown-1" class="mobile-dropdown-content">
+            <li><a href="Team.html">Our Team</a></li>
+          </ul>
+        </li>
+        <li class="relative">
+          <a
+            href=""
+            class="mobile-dropdown-toggle"
+            data-target="mobile-dropdown-2"
+          >
+            Our Services
+            <svg
+              class="mobile-dropdown-icon w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"
+              ></path>
+            </svg>
+          </a>
+          <ul id="mobile-dropdown-2" class="mobile-dropdown-content">
+            <li><a href="Homecare.html">Home Care</a></li>
+            <li><a href="Nursing.html">Nursing Home</a></li>
+            <li><a href="Transitional.html">Transitional Health</a></li>
+            <li><a href="Retirement.html">Retirement Living</a></li>
+          </ul>
+        </li>
+        <li><a href="Contact.html">Contact Us</a></li>
+      </ul>
+      <a href="Contact.html" class="mobile-button">Get In Touch</a>
+    </div>
+
+    <section
+      class="w-screen h-screen bg-cover bg-center bg-no-repeat flex items-center px-4 md:px-20"
+      style="background-image: url('Assets/Hero.jpg')"
+    >
+      <div class="text-white max-w-xl">
+        <h4
+          style="color: #c49e35"
+          class="font-bold uppercase mb-3"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-delay="900"
+        >
+          Iwacu Dignity Home Care
+        </h4>
+        <h1
+          class="text-4xl md:text-5xl font-extrabold text-blue-900 mb-6 leading-tight"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-delay="1200"
+        >
+          The Care You Deserve, <br />
+          From Professionals You Trust.
+        </h1>
+        <p
+          class="text-gray-700 text-lg md:text-xl leading-relaxed mb-8"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-delay="1200"
+        >
+          We offer exceptional home care services designed to enhance
+          well-being, foster independence, and ensure the highest level of
+          satisfaction for clients and their families.
+        </p>
+        <a
+          href="Iwacudifference.html"
+          class="inline-block bg-blue-800 text-white font-semibold px-6 py-3 rounded-full hover:bg-blue-900 transition duration-300"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
+          Learn More
+        </a>
+      </div>
+    </section>
+
+    <section class="bg-gray-50 py-16 md:py-24">
+      <div class="container mx-auto px-4 text-center">
+        <h2
+          class="text-4xl md:text-5xl lg:text-5xl font-extrabold leading-tight mb-12"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+        >
+          <span class="text-blue-900">Our Continuum Care</span>
+          <span style="color: #c49e35">Commitment</span>
+        </h2>
+        <div
+          class="max-w-4xl mx-auto text-lg md:text-xl leading-relaxed text-gray-800 space-y-6"
+        >
+          <p>
+            At the heart of our home care services is a genuine commitment to
+            caring for individuals with
+            <strong class="font-bold">dignity, respect, and compassion.</strong>
+          </p>
+          <p>
+            We understand that every person is unique, with their own needs,
+            preferences, and aspirations. Our approach is centered on building
+            meaningful relationships, truly listening to each individual, and
+            tailoring our care to enhance their quality of life.
+          </p>
+          <p>
+            We prioritize their
+            <strong class="font-bold"
+              >comfort, well-being, and independence</strong
+            >, creating an environment where they feel valued and supported.
+          </p>
+          <p>By focusing on the whole person, not just their needs.</p>
+          <p>
+            We aim to bring
+            <strong class="font-bold"
+              >reassurance, trust, and peace of mind</strong
+            >
+            to both our residents and their families. Our care is more than just
+            a service; it's a partnership in helping individuals live life to
+            the fullest.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white py-16 md:py-24 text-center">
+      <div class="container mx-auto px-4">
+        <h2
+          class="text-4xl md:text-5xl lg:text-5xl font-extrabold leading-tight"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
+          <span class="text-blue-900 font-bold px-4 py-2">Our</span
+          ><span class="text-[#C49E35]">Services</span>
+        </h2>
+      </div>
+    </section>
+
+    <section class="bg-blue-900 py-16 md:py-24 text-white">
+      <div class="container mx-auto px-4 text-center">
+        <h3
+          class="text-white text-3xl md:text-4xl font-extrabold leading-tight mb-12"
+        >
+          Home care is not a <span class="italic underline">career</span>; it's
+          a
+          <span class="italic underline text-[#C49E35]">calling.</span>
+        </h3>
+
+        <div
+          class="flex flex-col lg:flex-row justify-center items-stretch gap-10"
+        >
+          <div
+            class="w-full max-w-md mx-auto lg:w-auto lg:flex-1 bg-transparent overflow-visible flex flex-col items-center p-8"
+          >
+            <img
+              src="Assets/Nurse_fitted_1612x1080.jpg"
+              alt="Home Care"
+              class="rounded-lg mb-6 w-full h-auto object-cover"
+            />
+            <h4 class="text-white text-3xl font-bold mb-4">Home Care</h4>
+            <p class="text-gray-200 text-lg leading-relaxed text-center">
+              Our home care services provide exceptional, compassionate care
+              designed to empower individuals to live their best lives at home.
+              With highly trained caregivers and personalized plans, we ensure
+              comfort, safety, and independence for every resident.
+            </p>
+          </div>
+
+          <div
+            class="w-full max-w-md mx-auto lg:w-auto lg:flex-1 bg-transparent overflow-visible flex flex-col items-center p-8"
+          >
+            <img
+              src="Assets/10_edited.jpg"
+              alt="Nursing Home"
+              class="rounded-lg mb-6 w-full h-auto object-cover"
+            />
+            <h4 class="text-white text-3xl font-bold mb-4">Nursing Home</h4>
+            <p class="text-gray-200 text-lg leading-relaxed text-center">
+              Families trust us to deliver the highest quality care, fostering
+              comfort, dignity, and peace of mind. From delicious, nutritious
+              meals to on-site amenities and social events designed to promote
+              happiness and connection.
+            </p>
+          </div>
+
+          <div
+            class="w-full max-w-md mx-auto lg:w-auto lg:flex-1 bg-transparent overflow-visible flex flex-col items-center p-8"
+          >
+            <img
+              src="Assets/8_edited.jpg"
+              alt="Transitional Health"
+              class="rounded-lg mb-6 w-full h-auto object-cover"
+            />
+            <h4 class="text-white text-3xl font-bold mb-4">
+              Transitional Health
+            </h4>
+            <p class="text-gray-200 text-lg leading-relaxed text-center">
+              We offer personalized plans that address medical, emotional, and
+              logistical needs, ensuring smooth transitions between care
+              settings. Our expert team, advanced technology, and proactive
+              follow-ups reduce hospital readmissions, accelerate recovery, and
+              enhance patient satisfaction.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white py-8 md:py-12 flex justify-center items-center">
+      <a
+        href="Services.html"
+        class="inline-block bg-blue-900 text-white font-semibold py-3 px-8 rounded-full hover:bg-[#C49E35] transition-colors duration-200 shadow-lg text-lg tracking-wide"
+      >
+        Iwacu Dignity Homecare Services
+      </a>
+    </section>
+
+    <section
+      class="bg-gray-100 py-8 md:py-12 flex flex-col items-center justify-center text-center"
+    >
+      <h2
+        class="text-blue-900 text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight"
+        data-aos="fade-left"
+        data-aos-duration="1000"
+        data-aos-delay="200"
+      >
+        Discover Iwacu's<br />
+        <span class="text-[#C49E35]">Difference</span>
+      </h2>
+    </section>
+
+    <section class="bg-blue-900 py-16 md:py-24 px-4">
+      <div class="container mx-auto">
+        <div
+          class="flex flex-col lg:flex-row justify-center items-stretch gap-8"
+        >
+          <div
+            class="bg-white p-6 md:p-8 w-full md:max-w-[600px] lg:w-[350px] rounded-none shadow-md flex flex-col justify-center mx-auto"
+          >
+            <div>
+              <h3
+                class="text-blue-900 text-2xl font-bold mb-4 whitespace-nowrap"
+              >
+                Personalized Approach
+              </h3>
+              <p class="text-gray-700 text-base leading-relaxed mb-8">
+                Every care plan is uniquely crafted to meet the physical,
+                emotional, and social needs of our clients.
+              </p>
+            </div>
+            <div>
+              <h3
+                class="text-blue-900 text-2xl font-bold mb-4 whitespace-nowrap"
+              >
+                Cultural Values
+              </h3>
+              <p class="text-gray-700 text-base leading-relaxed">
+                Rooted in the meaning of "Iwacu" ("home" in Kinyarwanda), we
+                embrace creating a warm, family-like environment.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="hidden md:flex flex-shrink-0 justify-center items-center bg-white rounded-full shadow-lg w-[280px] h-[280px] md:w-[360px] md:h-[360px] lg:w-[480px] lg:h-[480px] mx-auto"
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+          >
+            <img
+              src="Assets/10_edited.jpg"
+              alt="Happy elderly people"
+              class="rounded-full object-cover w-[270px] h-[270px] md:w-[350px] h-[350px] lg:w-[470px] lg:h-[470px]"
+            />
+          </div>
+
+          <div
+            class="bg-white p-6 md:p-8 w-full md:max-w-[600px] lg:w-[350px] rounded-none shadow-md flex flex-col justify-center mx-auto"
+          >
+            <div>
+              <h3
+                class="text-blue-900 text-2xl font-bold mb-4 whitespace-nowrap"
+              >
+                Seamless Transition
+              </h3>
+              <p class="text-gray-700 text-base leading-relaxed mb-8">
+                We provide continuous care as clients' needs evolve, ensuring
+                smooth transitions between services without compromising
+                quality.
+              </p>
+            </div>
+            <div>
+              <h3
+                class="text-blue-900 text-2xl font-bold mb-4 whitespace-nowrap"
+              >
+                Experienced Team
+              </h3>
+              <p class="text-gray-700 text-base leading-relaxed">
+                Our highly trained professionals include caregivers, nurses, and
+                specialists with extensive experience.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white py-16 md:py-24 px-4">
+      <div class="container mx-auto">
+        <div
+          class="flex flex-col lg:flex-row gap-12 items-center lg:items-start justify-between"
+        >
+          <div class="w-full lg:w-1/2 max-w-[700px] lg:max-w-none mx-auto">
+            <div class="bg-gray-50 p-4 md:p-6 rounded-lg mb-40">
+              <h2
+                class="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight text-left"
+              >
+                <span class="text-blue-900">What is Your </span
+                ><span style="color: #c49e35">Biggest </span
+                ><span class="text-blue-900">Challenge?</span>
+              </h2>
+            </div>
+
+            <div
+              class="bg-gray-100 border-t border-b border-blue-900 overflow-hidden"
+            >
+              <div class="accordion-item border-b border-blue-900">
+                <div
+                  class="accordion-header bg-gray-50 py-2 px-3 flex justify-between items-center cursor-pointer hover:bg-white group"
+                >
+                  <h4
+                    class="text-sm text-gray-800 capitalize group-hover:text-[#C49E35]"
+                  >
+                    The Heartbreaking Struggle of Balancing Work and Family Care
+                  </h4>
+                  <span
+                    class="accordion-icon text-black text-2xl transform transition-transform duration-300 font-bold"
+                    >+</span
+                  >
+                </div>
+                <div class="accordion-content bg-white py-2 px-3 hidden">
+                  <p class="text-base text-gray-700 leading-relaxed">
+                    <span class="font-bold underline">Challenge:</span><br />For
+                    working families, there’s an emotional toll of not being
+                    able to care for elderly parents the way they deserve. As
+                    children, we often feel a deep sense of duty to care for the
+                    ones who raised us, but the demands of modern life—work,
+                    children, and personal commitments—make it feel impossible
+                    to be there for them all the time. It’s an agonizing feeling
+                    knowing they’re alone when they need us the most. Our
+                    parents were our protectors, guiding us through life’s
+                    hardest moments, but now, as they age, the role has shifted.
+                    They need us, and we want to be there, but we simply can’t
+                    be present all the time. <br /><br />
+                    <span class="font-bold underline">Solution:</span
+                    ><br />Iwacu Dignity Home Care understands this heartache.
+                    We’re here to step in when you can’t. Our caregivers become
+                    a part of your family, providing compassionate, 24/7 care
+                    that respects the dignity of your loved ones. We’re not just
+                    caretakers; we’re companions who listen, comfort, and offer
+                    the support your parents deserve in their later years.
+                  </p>
+                </div>
+              </div>
+
+              <div class="accordion-item border-b border-blue-900">
+                <div
+                  class="accordion-header bg-gray-50 py-2 px-3 flex justify-between items-center cursor-pointer hover:bg-white group"
+                >
+                  <h4
+                    class="text-sm text-gray-800 capitalize group-hover:text-[#C49E35]"
+                  >
+                    Limited Availability of Professional Services
+                  </h4>
+                  <span
+                    class="accordion-icon text-black text-2xl transform transition-transform duration-300 font-bold"
+                    >+</span
+                  >
+                </div>
+                <div class="accordion-content bg-white py-2 px-3 hidden">
+                  <p class="text-base text-gray-700 leading-relaxed">
+                    <span class="font-bold underline">Challenge:</span
+                    ><br />Many home care services in Rwanda lack trained
+                    professionals, leading to inadequate or unsafe care for the
+                    elderly and patients. <br /><br />
+                    <span class="font-bold underline">Solution:</span
+                    ><br />Iwacu Dignity Home Care provides highly trained
+                    caregivers and nurses who undergo rigorous background checks
+                    and professional training. Our team ensures safety, dignity,
+                    and high-quality care for every resident.
+                  </p>
+                </div>
+              </div>
+
+              <div class="accordion-item border-b border-blue-900">
+                <div
+                  class="accordion-header bg-gray-50 py-2 px-3 flex justify-between items-center cursor-pointer hover:bg-white group"
+                >
+                  <h4
+                    class="text-sm text-gray-800 capitalize group-hover:text-[#C49E35]"
+                  >
+                    Unreliable and Inconsistent Service Delivery
+                  </h4>
+                  <span
+                    class="accordion-icon text-black text-2xl transform transition-transform duration-300 font-bold"
+                    >+</span
+                  >
+                </div>
+                <div class="accordion-content bg-white py-2 px-3 hidden">
+                  <p class="text-base text-gray-700 leading-relaxed">
+                    <span class="font-bold underline">Challenge:</span
+                    ><br />Families often face challenges with caregivers not
+                    showing up on time, missing appointments, or delivering
+                    inconsistent care. <br /><br />
+                    <span class="font-bold underline">Solution:</span><br />At
+                    Iwacu Dignity Home Care, we guarantee reliable and
+                    consistent care through 24/7 availability and a dedicated
+                    management system that monitors service delivery to meet
+                    client expectations.
+                  </p>
+                </div>
+              </div>
+
+              <div class="accordion-item border-b border-blue-900">
+                <div
+                  class="accordion-header bg-gray-50 py-2 px-3 flex justify-between items-center cursor-pointer hover:bg-white group"
+                >
+                  <h4
+                    class="text-sm text-gray-800 capitalize group-hover:text-[#C49E35]"
+                  >
+                    High Costs of Quality Home Care Services
+                  </h4>
+                  <span
+                    class="accordion-icon text-black text-2xl transform transition-transform duration-300 font-bold"
+                    >+</span
+                  >
+                </div>
+                <div class="accordion-content bg-white py-2 px-3 hidden">
+                  <p class="text-base text-gray-700 leading-relaxed">
+                    <span class="font-bold underline">Challenge:</span
+                    ><br />Quality home care services are often unaffordable for
+                    most families, making it difficult to access long-term care.
+                    <br /><br />
+                    <span class="font-bold underline">Solution:</span
+                    ><br />Iwacu Dignity Home Care offers affordable and
+                    flexible care packages to suit different budgets without
+                    compromising on quality. We also provide customized care
+                    plans to meet specific needs cost-effectively.
+                  </p>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <div
+                  class="accordion-header bg-gray-50 py-2 px-3 flex justify-between items-center cursor-pointer hover:bg-white group"
+                >
+                  <h4
+                    class="text-sm text-gray-800 capitalize group-hover:text-[#C49E35]"
+                  >
+                    Lack of Specialized Services for Specific Conditions
+                  </h4>
+                  <span
+                    class="accordion-icon text-black text-2xl transform transition-transform duration-300 font-bold"
+                    >+</span
+                  >
+                </div>
+                <div class="accordion-content bg-white py-2 px-3 hidden">
+                  <p class="text-base text-gray-700 leading-relaxed">
+                    <span class="font-bold underline">Challenge:</span
+                    ><br />Home care services in Rwanda often do not cater to
+                    individuals with specialized needs such as memory care or
+                    mental health support. <br /><br />
+                    <span class="font-bold underline">Solution:</span
+                    ><br />Iwacu Dignity Home Care specializes in memory living
+                    care, mental health support, and other tailored services. We
+                    create personalized care plans designed to address specific
+                    health conditions, ensuring optimal well-being for every
+                    client.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full lg:w-1/2 flex justify-center lg:justify-end">
+            <img
+              src="Assets/Three Generations.jpg"
+              alt="Family receiving home care"
+              class="rounded-lg object-cover w-full h-auto max-w-lg lg:max-w-none"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="bg-gray-50 flex flex-col md:flex-col lg:flex-row items-start gap-8 px-6 md:px-12 py-10"
+    >
+      <div class="bg-gray-50 p-6 md:p-8 rounded-lg w-full lg:w-[70%]">
+        <div class="mb-4">
+          <svg
+            class="w-8 h-8 text-blue-700"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-delay="900"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4.318 6.318a4.5 4.5 0 016.364 0L12 7.636l1.318-1.318a4.5 4.5 0 116.364 6.364L12 21.364 4.318 12.682a4.5 4.5 0 010-6.364z"
+            />
+          </svg>
+        </div>
+        <h2
+          class="text-2xl md:text-3xl font-bold text-blue-900 leading-snug"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          data-aos-delay="500"
+        >
+          WHAT PEOPLE <span class="text-yellow-600">SAY ABOUT IWACU</span>
+        </h2>
+        <p
+          class="text-gray-700 mt-4 leading-relaxed text-xl"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-delay="100"
+        >
+          At Iwacu Dignity Home Care, we believe that every individual has a
+          unique story worth celebrating. In this section, we share heartfelt
+          experiences, inspiring journeys, and moments of care that highlight
+          the impact of our services. From our clients to their families and our
+          dedicated caregivers, these stories reflect the compassion,
+          dedication, and dignity at the heart of everything we do. Explore the
+          lives we've touched and see how we’re making a difference one story at
+          a time.
+        </p>
+        <p class="mt-6 text-yellow-600 font-semibold cursor-pointer">
+          BROWSE ALL STORIES →
+        </p>
+      </div>
+
+      <div
+        class="hidden md:flex flex-col items-center w-full lg:w-[30%] p-6 md:p-8"
+      >
+        <p class="text-blue-900 text-xl font-bold mb-6">
+          Read about one of our client’s story:<br />
+          Kaliza Cynthia
+        </p>
+
+        <a
+          href="#"
+          class="text-white bg-blue-700 py-1 px-2 font-semibold mb-4 inline-flex items-center rounded hover:bg-[#C49E35] transition-colors duration-300 group"
+        >
+          Read more
+          <span
+            class="inline-flex items-center justify-center w-6 h-6 bg-white text-blue-700 rounded-full ml-1 group-hover:rotate-[360deg] transition-transform duration-300 text-xl leading-none"
+          >
+            ›
+          </span>
+        </a>
+
+        <img
+          src="Assets/4.avif"
+          alt="Kaliza Cynthia smiling"
+          class="w-full h-auto object-cover rounded shadow-md"
+        />
+      </div>
+    </section>
+
+    <section class="bg-blue-900 py-20 px-6 md:px-16 text-white">
+      <div class="max-w-6xl mx-auto text-left">
+        <h2
+          class="text-4xl md:text-6xl font-extrabold leading-tight mb-10"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
+          Be the First to Receive the<br />
+          Latest News
+        </h2>
+        <form class="mt-6">
+          <a
+            href=""
+            class="inline-block bg-white text-blue-900 text-lg font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 transition-colors duration-200"
+          >
+            Sign Up
+          </a>
+        </form>
+      </div>
+    </section>
+
+    <footer class="bg-blue-900 text-white py-12 px-4 md:px-12">
+      <div
+        class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+      >
+        <div class="flex flex-col items-center md:items-start space-y-4">
+          <img
+            src="Assets/IWACU_HOMECARE_LOGO-removebg-preview.png"
+            alt="Iwacu Dignity Home Care Logo"
+            class="h-60 w-auto block -mt-12"
+          />
+        </div>
+
+        <div class="text-center md:text-left">
+          <h4 class="font-bold text-lg mb-4">Navigation</h4>
+          <ul class="space-y-2">
+            <li>
+              <a
+                href="index.html"
+                class="text-gray-400 hover:text-white transition-colors duration-200"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="Iwacudifference.html"
+                class="text-gray-400 hover:text-white transition-colors duration-200"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="Contact.html"
+                class="text-gray-400 hover:text-white transition-colors duration-200"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="text-center md:text-left">
+          <h4 class="font-bold text-lg mb-4">Social</h4>
+          <ul class="space-y-2">
+            <li>
+              <a
+                href="https://www.facebook.com/Iwacu-Dignity-Home-Care/"
+                class="text-gray-400 hover:text-white transition-colors duration-200"
+                target="_blank"
+                >Facebook</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="text-gray-400 hover:text-white transition-colors duration-200"
+                >LinkedIn</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/@iwacudignityhomecare8501"
+                class="text-gray-400 hover:text-white transition-colors duration-200"
+                target="_blank"
+                >YouTube</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="text-center md:text-left">
+          <h4 class="font-bold text-lg mb-4">Contact</h4>
+          <ul class="space-y-2">
+            <li
+              class="flex items-center space-x-2 justify-center md:justify-start"
+            >
+              <svg
+                class="w-5 h-5 text-gray-400"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+                ></path>
+                <path
+                  d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
+                ></path>
+              </svg>
+              <a
+                href="mailto:iwacuhomecare@gmail.com"
+                class="text-gray-400 hover:text-white transition-colors duration-200"
+                >Email: iwacuhomecare@gmail.com</a
+              >
+            </li>
+            <li
+              class="flex items-center space-x-2 justify-center md:justify-start"
+            >
+              <svg
+                class="w-5 h-5 text-gray-400"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M2 3a1 1 0 011-1h2.153a1 1 0 01.928.688l2.245 4.5a1 1 0 01-.153 1.025l-1.584 1.584a8.133 8.133 0 004.583 4.583l1.584-1.584a1 1 0 011.025-.153l4.5 2.245a1 1 0 01.688.928V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"
+                ></path>
+              </svg>
+              <a
+                href="tel:+250791434761"
+                class="text-gray-400 hover:text-white transition-colors duration-200"
+                >Tel: (+250) 791-434-761</a
+              >
+            </li>
+            <li
+              class="flex items-start space-x-2 justify-center md:justify-start"
+            >
+              <svg
+                class="w-5 h-5 text-gray-400 flex-shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <span class="text-gray-400">Address: Kigali Rwanda</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div
+        class="container mx-auto text-center mt-8 pt-4 border-t border-yellow-600"
+      >
+        <p class="text-gray-400 text-sm">
+          © 2023 Iwacu Dignity Home Care. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="Js/main.js"></script>
+  </body>
+</html>
