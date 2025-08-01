@@ -11,13 +11,16 @@
 </head>
 
 <body>
+  <!-- Navbar -->
   <nav class="bg-blue-900 text-white p-4 shadow-lg w-full">
     <div class="container mx-auto flex justify-between items-center">
+      <!-- Logo -->
       <a href="index.html" class="flex items-center space-x-2">
         <img src="Assets/IWACU_HOMECARE_LOGO-removebg-preview.png" alt="Iwacu Home Care Logo"
           class="h-32 w-auto rounded-full object-cover" />
       </a>
 
+      <!-- Desktop Menu Links -->
       <ul class="hidden md:flex space-x-12 items-center">
         <li>
           <a href="index.html"
@@ -35,7 +38,8 @@
           <ul
             class="absolute hidden group-hover:block top-full left-0 bg-white shadow-lg min-w-[160px] z-50 rounded-lg overflow-hidden">
             <li>
-              <a href="Team.html" class="block px-4 py-3 text-gray-800 whitespace-nowrap hover:bg-gray-100">Our Team</a>
+              <a href="Team.html" class="block px-4 py-3 text-gray-800 whitespace-nowrap hover:bg-gray-100">Our
+                Team</a>
             </li>
           </ul>
         </li>
@@ -74,26 +78,42 @@
         </li>
       </ul>
 
-      <a href="Contact.html"
-        class="hidden md:block bg-[#C49E35] text-white font-semibold py-2 px-6 rounded-full hover:bg-white hover:text-blue-900 transition-colors duration-200 shadow-md">
-        Get In Touch
-      </a>
+      <!-- Right-aligned items (Language Switcher, Get In Touch, Mobile Toggle) -->
+      <div class="flex items-center space-x-4">
+        <!-- Language Switcher Buttons -->
+        <div class="flex space-x-2">
+          <button onclick="doGTranslate('en|en')"
+            class="px-3 py-1 rounded-full bg-blue-900 border-2 border-[#C49E35] text-[#C49E35] hover:bg-[#C49E35] hover:text-blue-900 transition-colors duration-200 text-sm font-semibold">
+            EN
+          </button>
+          <button onclick="doGTranslate('en|rw')"
+            class="px-3 py-1 rounded-full bg-blue-900 border-2 border-[#C49E35] text-[#C49E35] hover:bg-[#C49E35] hover:text-blue-900 transition-colors duration-200 text-sm font-semibold">
+            RW
+          </button>
+        </div>
 
-      <div class="md:hidden">
-        <button id="mobile-menu-toggle" class="focus:outline-none hamburger-icon">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+        <!-- Desktop 'Get In Touch' button -->
+        <a href="Contact.html"
+          class="hidden md:block bg-[#C49E35] text-white font-semibold py-2 px-6 rounded-full hover:bg-white hover:text-blue-900 transition-colors duration-200 shadow-md">
+          Get In Touch
+        </a>
+
+        <!-- Mobile Menu Toggle -->
+        <div class="md:hidden">
+          <button id="mobile-menu-toggle" class="focus:outline-none hamburger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
       </div>
     </div>
   </nav>
-  <!-- Mobile Menu Overlay -->
-  <div id="mobile-menu-overlay" class="mobile-menu-overlay"></div>
 
-  <!-- Mobile Menu Sidebar -->
+  <!-- Mobile Menu (The JavaScript will toggle this) -->
+  <div id="mobile-menu-overlay" class="mobile-menu-overlay"></div>
   <div id="mobile-menu" class="mobile-menu">
-    <button class="close-btn" id="mobile-menu-close">&times;</button>
+    <button class="close-btn" id="mobile-menu-close">×</button>
     <ul class="flex flex-col">
       <li><a href="index.html">Home</a></li>
       <li class="relative">
@@ -109,7 +129,7 @@
         </ul>
       </li>
       <li class="relative">
-        <a href="/" class="mobile-dropdown-toggle" data-target="mobile-dropdown-2">
+        <a href="Services.html" class="mobile-dropdown-toggle" data-target="mobile-dropdown-2">
           Our Services
           <svg class="mobile-dropdown-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg">
@@ -125,7 +145,7 @@
       </li>
       <li><a href="Contact.html">Contact Us</a></li>
     </ul>
-    <a href="#" class="mobile-button">Get In Touch</a>
+    <a href="Contact.html" class="mobile-button">Get In Touch</a>
   </div>
 
   <!-- Our Team Members Section -->
@@ -221,14 +241,6 @@
           </div>
         </div>
 
-        <div class="text-center flex flex-col">
-          <img class="w-full h-64 object-cover object-top" src="Assets/Team/Christine-Safari.png"
-            alt="Christine Safari" />
-          <div class="bg-gray-100 p-4 flex-grow">
-            <h3 class="text-xl font-bold text-gray-800">Christine Safari</h3>
-            <p class="font-semibold text-gray-600">Advisory Board Member</p>
-          </div>
-        </div>
 
         <div class="text-center flex flex-col">
           <img class="w-full h-64 object-cover object-top" src="Assets/Team/Leonie-Rutanga.jpg" alt="Leonie Rutanga" />
@@ -351,6 +363,15 @@
       </p>
     </div>
   </footer>
+
+
+  <!-- The hidden placeholder for Google Translate's functionality -->
+  <div id="google_translate_element" style="display: none;"></div>
+
+  <!-- This script loads the Google Translate API. It is placed here because the functions above reference it. -->
+  <script type="text/javascript"
+    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script src="Js/main.js"></script>
 </body>
